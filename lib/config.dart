@@ -66,7 +66,7 @@ abstract class ConfigLoader {
    * A config loader will load the config data from the [pathOrUrl], and
    * return the contents of the file as a `Future<String>`
    */
-  Future<String> loadConfig(pathOrUrl);
+  Future<String> loadConfig(String pathOrUrl);
 
 }
 

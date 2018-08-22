@@ -7,7 +7,7 @@ import '../config.dart';
 
 class YamlConfigParser implements ConfigParser {
   
-  Future<Map> parse(String configText) {
+  Future<Map<String, Object>> parse(String configText) {
     var completer = new Completer<Map>();
     
     var map = YAML.loadYaml(configText);
